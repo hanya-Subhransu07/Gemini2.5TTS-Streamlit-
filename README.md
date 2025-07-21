@@ -12,6 +12,26 @@ A modern, AI-powered text-to-speech application built with Streamlit and Google'
 - **Download Support**: Save generated audio as MP3 files
 - **Real-time Processing**: Generate speech with live feedback
 
+## Technology Stack
+* **Frontend Framework:** Streamlit
+* **Backend & APIs:**
+   * Google Cloud Text-to-Speech API
+   * Google Gemini API
+* **Core Python Libraries:**
+   * google-cloud-texttospeech: The official SDK for the Cloud TTS service.
+   * google-generativeai: The official SDK for the Gemini family of models.
+   * Pillow: For image handling to display the logo.
+
+## Project Architecture & Integration Logic
+The application follows a straightforward yet powerful architecture:
+1. **User Interface (Streamlit):** The frontend is rendered entirely by Streamlit, which manages the state of widgets like dropdowns, text areas, and buttons.
+2. **Engine Selection:** The user first chooses a TTS engine. This selection determines which backend function will be called.
+   * If **"Google Cloud TTS"** is selected, the app calls the synthesize_text_google() function.
+   * If **"Gemini TTS"** is selected, the app calls the synthesize_text_gemini() function.
+3. **API Request:** The corresponding function formats the user's text and selected voice parameters into a request compatible with its target API.
+4. **Local Authentication:** For the Google Cloud TTS engine, the application relies on "Application Default Credentials" (ADC). The gcloud auth command (detailed in the setup) creates a local credential file that the Python SDK automatically finds and uses to authenticate the API requests securely.
+5. **Audio Processing:** The API returns the synthesized audio as raw bytes. The application then presents this data to the user via Streamlit's st.audio widget for playback and st.download_button for saving the MP3 file.
+
 
 ## Demo Working Video
 Check out the demo video to see Gemini 2.5 TTS Integration in action:
