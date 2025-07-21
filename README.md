@@ -18,9 +18,10 @@ Check out the demo video to see Gemini 2.5 TTS Integration in action:
 
 ![Demo Video](https://github.com/hanya-Subhransu07/Gemini2.5TTS-Streamlit-/blob/main/Geimini2.5%20TTS%20Integration.mp4)
 
-*Can't see the video? [Click here to download](https://github.com/hanya-Subhransu07/Gemini2.5TTS-Streamlit-/blob/main/Geimini2.5%20TTS%20Integration.mp4)*
-
 ## Screenshots
+
+
+<img width="1919" height="974" alt="image" src="https://github.com/user-attachments/assets/c08a7b78-d53b-46bf-87a4-87299a441654" />
 
 The application features a beautiful dark interface with:
 - Fixed logo positioning
