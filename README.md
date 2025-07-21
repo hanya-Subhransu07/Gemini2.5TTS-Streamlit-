@@ -13,14 +13,13 @@ A modern, AI-powered text-to-speech application built with Streamlit and Google'
 - **Real-time Processing**: Generate speech with live feedback
 
 
-## Demo 🎥
-
-### Working Video
-Check out the demo video to see Hanyaa Narration in action:
+## Demo Working Video
+Check out the demo video to see Gemini 2.5 TTS Integration in action:
 
 ![Demo Video](https://github.com/hanya-Subhransu07/Gemini2.5TTS-Streamlit-/blob/main/Geimini2.5%20TTS%20Integration.mp4)
 
 *Can't see the video? [Click here to download](https://github.com/hanya-Subhransu07/Gemini2.5TTS-Streamlit-/blob/main/Geimini2.5%20TTS%20Integration.mp4)*
+
 ## Screenshots
 
 The application features a beautiful dark interface with:
